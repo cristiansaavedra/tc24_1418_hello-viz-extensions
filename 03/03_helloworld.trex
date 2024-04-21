@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+  <worksheet-extension id="com.cristiansaavedra.samples.steps.helloworld03" extension-version="1.0.0">
+    <default-locale>en_US</default-locale>
+    <name resource-id="name"/>
+    <description>03 Hello World</description>
+    <author name="Cristian Saavedra Desmoineaux" email="cristian.saavedra.desmoineaux@gmail.com" 
+	          organization="ComuniDatos"           website="https://medium.com/@cristiansaavedra"/>
+    <min-api-version>1.1</min-api-version>
+    <source-location>
+      <url>http://localhost:8086/03/03_helloworld.html</url>
+    </source-location>
+    <icon/>
+    <encoding id="A">
+      <display-name>Number</display-name>
+      <data-spec>
+        <data-type>numeric</data-type>
+      </data-spec>
+      <role-spec>
+        <role-type>continuous-measure</role-type>
+        <role-type>continuous-dimension</role-type>
+      </role-spec>
+      <fields max-count="5"/>
+    </encoding>
+    <encoding id="B">
+      <display-name>Text</display-name>
+      <data-spec>
+        <data-type>string</data-type>
+      </data-spec>
+      <role-spec>
+        <role-type>discrete-dimension</role-type>
+        <role-type>discrete-measure</role-type>
+      </role-spec>
+      <fields max-count="5"/>
+    </encoding>
+    <encoding id="C">
+      <display-name>Anything</display-name>
+    </encoding>
+  </worksheet-extension>
+  <resources>
+    <resource id="name">
+      <text locale="en_US">03 Hello World</text>
+	    <text locale="es_ES">03 Hola Mundo</text>
+    </resource>
+  </resources>
+</manifest>

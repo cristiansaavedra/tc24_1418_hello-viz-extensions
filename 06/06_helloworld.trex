@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+  <worksheet-extension id="com.cristiansaavedra.samples.steps.helloworld06" extension-version="1.0.1">
+    <default-locale>en_US</default-locale>
+    <name resource-id="name"/>
+    <description>06 Hello World</description>
+    <author name="Cristian Saavedra Desmoineaux" email="cristian.saavedra.desmoineaux@gmail.com" 
+            organization="ComuniDatos"           website="https://medium.com/@cristiansaavedra"/>
+    <min-api-version>1.1</min-api-version>
+    <source-location>
+      <url>http://localhost:8086/06/06_helloworld.html</url>
+    </source-location>
+    <icon/>
+    <context-menu>
+      <configure-context-menu-item />
+    </context-menu>
+    <encoding id="c">
+      <display-name>Columns</display-name>
+      <fields max-count="10"/>
+      <encoding-icon token="letter-c" />
+    </encoding>
+  </worksheet-extension>
+  <resources>
+    <resource id="name">
+      <text locale="en_US">06 Hello World</text>
+      <text locale="es_ES">06 Hola Mundo</text>
+    </resource>
+  </resources>
+</manifest>
